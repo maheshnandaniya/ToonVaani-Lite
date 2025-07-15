@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ToonVaani - Cartoon Story</title>
+</head>
+<body style="font-family: sans-serif; padding: 2rem;">
+    <h1>📖 Cartoon Story</h1>
+    <pre style="background:#f4f4f4; padding:1rem; border-left:4px solid #2196f3;">{{ story }}</pre>
+
+    {% if audio_path %}
+        <h3>🔊 Listen:</h3>
+        <audio controls autoplay>
+            <source src="{{ audio_path }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    {% endif %}
+</body>
+</html>
